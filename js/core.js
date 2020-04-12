@@ -7,6 +7,13 @@ function CreateTableFromJSON() {
 				//console.log('Output: ', out);
 				data = out;
 		
+        
+        document.getElementById("BDCountry").innerHTML = JSON.stringify(data[98].country);
+        document.getElementById("BDCases").innerHTML = JSON.stringify(data[98].cases);
+        document.getElementById("TODAYCases").innerHTML = JSON.stringify(data[98].todayCases);
+        document.getElementById("BDDeaths").innerHTML = JSON.stringify(data[98].deaths);
+        document.getElementById("TODAYDeaths").innerHTML = JSON.stringify(data[98].todayDeaths);
+        document.getElementById("Recovered").innerHTML = JSON.stringify(data[98].recovered);
 
         // EXTRACT VALUE FOR HTML HEADER. 
         // ('Country', 'Cases', etc)
@@ -18,10 +25,8 @@ function CreateTableFromJSON() {
                 }
             }
         }
-
-        // Adding Spaces
         
-
+    
         // CREATE DYNAMIC TABLE.
         var table = document.createElement("table");
 		table.setAttribute("class", "table table-striped");
@@ -39,8 +44,6 @@ function CreateTableFromJSON() {
             th.innerHTML = col[i].toUpperCase();
             th.setAttribute("id", "S"+i);
             tr.appendChild(th);
-            
-            
         }
         
 
@@ -55,9 +58,13 @@ function CreateTableFromJSON() {
 
             for (var j = 0; j < col.length; j++) {
                 var tabCell = tr.insertCell(-1);
+                
+
                 tabCell.innerHTML = data[i][col[j]];
             }
         }
+
+        
         
         // ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
         var divContainer = document.getElementById("showData");
