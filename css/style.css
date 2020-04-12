@@ -1,0 +1,149 @@
+
+ .table{
+     border: 1px solid !important;
+     text-align:center;
+ }
+ .credits{
+     background-color: black;
+     color: white;
+     margin-top: -16px;
+ }
+
+ .bdflag{
+     padding-bottom: 3%;
+     text-align: center;
+
+ }
+
+ .flag{
+     
+     width: 40%;
+
+ }
+
+ #S2{
+    visibility: hidden;
+    position: relative;
+}
+
+ #S2:after {
+    visibility: visible;
+    position: absolute;
+    top: -1px !important;
+    left: 0;
+    bottom: 0;
+    content: "TODAY'S CASES";
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    padding:1.5rem;
+
+}
+
+#S4{
+    visibility: hidden;
+    position: relative;
+}
+
+ #S4:after {
+    visibility: visible;
+    position: absolute;
+    top: -1px !important;
+    left: 0;
+    bottom: 0;
+    content: "TODAY'S DEATHS";
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    padding:1.5rem;
+
+}
+
+#S8{
+    visibility: hidden;
+    position: relative;
+}
+
+ #S8:after {
+    visibility: visible;
+    position: absolute;
+    top: -1px !important;
+    left: 0;
+    bottom: 0;
+    content: "CASE/MILLION";
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    padding-right: 42%;
+    padding-left: 24%;
+    padding-top: 12%;
+
+}
+
+#S9{
+    visibility: hidden;
+    position: relative;
+}
+
+ #S9:after {
+    visibility: visible;
+    position: absolute;
+    top: -1px !important;
+    left: 0;
+    bottom: 0;
+    content: "DEATH/MILLION";
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    padding-right: 42%;
+    padding-left: 24%;
+    padding-top: 11%;
+
+}
+
+#S10{
+    visibility: hidden;
+    position: relative;
+}
+
+ #S10:after {
+    visibility: visible;
+    position: absolute;
+    top: -1px !important;
+    left: 0;
+    bottom: 0;
+    content: "TOTAL TESTS";
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    padding:1.5rem;
+    padding-right: 20%;
+
+}
+
+#S11{
+    visibility: hidden;
+    position: relative;
+}
+
+ #S11:after {
+    visibility: visible;
+    position: absolute;
+    top: -1px !important;
+    left: 0;
+    bottom: 0;
+    content: "TEST/MILLION";
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    padding-right: 28%;
+    padding-left: 25%;
+    padding-top: 12%;
+ 
+
+}
+
+
+.table th{
+    padding: 1.75rem !important;
+}
