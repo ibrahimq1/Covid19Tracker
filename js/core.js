@@ -20,14 +20,14 @@ function CreateTableFromJSON() {
                 
             
         //console.log(BDData);
-
+        
         document.getElementById("BDCountry").innerHTML = JSON.stringify(BDData.country);
         document.getElementById("BDCases").innerHTML = JSON.stringify(BDData.cases);
         document.getElementById("TODAYCases").innerHTML = JSON.stringify(BDData.todayCases);
         document.getElementById("BDDeaths").innerHTML = JSON.stringify(BDData.deaths);
         document.getElementById("TODAYDeaths").innerHTML = JSON.stringify(BDData.todayDeaths);
         document.getElementById("Recovered").innerHTML = JSON.stringify(BDData.recovered);
-        
+
         }).catch(errors => console.error(errors));
         
         
