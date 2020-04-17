@@ -17,10 +17,9 @@ function CreateTableFromJSON() {
 
                     BDData = out;
 
-                
+        //Need to add graph        
             
         //console.log(BDData);
-        
         document.getElementById("BDCountry").innerHTML = JSON.stringify(BDData.country);
         document.getElementById("BDCases").innerHTML = JSON.stringify(BDData.cases);
         document.getElementById("TODAYCases").innerHTML = JSON.stringify(BDData.todayCases);
