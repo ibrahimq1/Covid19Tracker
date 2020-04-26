@@ -6,18 +6,15 @@ function CreateTableFromJSON() {
 			.then((out) => {
 				//console.log('Output: ', out);
 				data = out;
-		
+		console.log(data);
         //console.log(data);
-
-
         var BDData;
-        fetch('https://coronavirus-19-api.herokuapp.com/countries/bangladesh')
+        fetch('https://corona.lmao.ninja/v2/countries/bangladesh?yesterday=false')
                 .then(res => res.json())
                 .then((out) => {
-
                     BDData = out;
 
-        //Need to add graph        
+                
             
         //console.log(BDData);
         document.getElementById("BDCountry").innerHTML = JSON.stringify(BDData.country);
@@ -67,7 +64,7 @@ function CreateTableFromJSON() {
         
         // ADD JSON DATA TO THE TABLE AS ROWS.
         // 0 = World Data
-        for (var i = 8; i < aclength; i++) {
+        for (var i = 1; i < aclength; i++) {
             
             tr = table.insertRow(-1);
 
